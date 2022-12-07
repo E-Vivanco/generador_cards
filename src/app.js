@@ -27,16 +27,20 @@ window.onload = function() {
   numero1.addEventListener("onload", function() {
     number();
   });
-
+  //p_iz = Math.floor(Math.random() * 10 + 1);
+  //console.log(p_iz);
   //function ubicar_palo_i(val) {
   //  p_iz = Math.floor(Math.random() * 10 + 1);
   //  val = paloizq.appendChild(p_iz);
   //  console.log(val);
   //}
 };
+
+let p_iz = Math.floor(Math.random() * 10 + 2);
+console.log("quevalor?", p_iz);
 function ubicar_palo_i(val) {
   p_iz = Math.floor(Math.random() * 10 + 1);
-  val = paloizq.appendChild(p_iz);
+  val = paloizq.body.appendChild(p_iz);
   console.log(val);
 }
 function ubicar_palo_d() {
