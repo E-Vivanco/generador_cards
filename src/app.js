@@ -11,7 +11,7 @@ window.onload = function() {
   let palo1 = document.querySelector("#paloI");
   let paloizq = palo1.children[0].children[0];
   paloizq.addEventListener("click", function() {
-    ubicar_palo_i();
+    ubicar_palo_i(paloizq);
   });
 
   //console.log("paloder va aqui", paloder);
@@ -23,15 +23,19 @@ window.onload = function() {
 
   //console.log("El numero va aqui", numero);
   let num_random = document.querySelector("#numero_r");
-  let numero = num_random.children[0].children[0];
-  numero.addEventListener("click", function() {
-    num_rand();
+  let numero1 = num_random.children[0].children[0];
+  numero1.addEventListener("click", function() {
+    number();
   });
-
-  //console.log(num_random.children[0].children[0]);
-  //  num_rand();
-  //console.log(palo2.children[0].children[0]);
-  //let paloder = palo2.children[0].children[1];
-  //console.log(paloder);
-  //console.log("Hello Rigo from the console!");
 };
+function ubicar_palo_i(val) {
+  p_iz = Math.floor(Math.random() * 10 + 1);
+  val = paloizq.appendChild(p_iz);
+  console.log(val);
+}
+function ubicar_palo_d() {
+  paloder;
+}
+function number() {
+  numero1;
+}
