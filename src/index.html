@@ -16,7 +16,7 @@
   <body style="background-color: rgba(0,128,0,0.98)">
     <div class="card container-fluid card-text my-5" style="width: 18rem;">
       <div class="card-body">
-        <div id="paloI">
+        <div id="paloI" onload= "ubicar_palo_i(this)">
         <div class="row">
           <div class="col-12 palo_izq">
             <!--<i class="fa-solid fa-heart fa-1x"></i>-->
@@ -24,16 +24,17 @@
           </div>
         </div>
       </div>
-        <div id="marcador">  
+        <div id="numero_r" onload="num_rand(this)">  
          <div class="row">
-            <div class="col-12 numero">
+            <div class="col-12 numero" style="font-size: 160px; text-align: center;">
+              9
             <!-- <img src="..." class="card-img-top" alt="..." />-->
           </div>
         </div>
       </div>
-      <div id="paloD">  
-      <div class="row palo_der">
-          <div class="col-12 d-flex ">
+      <div id="paloD" onload="ubicar_palo_d(this)">  
+      <div class="row">
+          <div class="col-12 palo_der">
             <!--<i class="fa-solid fa-heart fa-1x"></i>-->
             <!--<img src="..." class="card-img-top" alt="..." />-->
             </div>
