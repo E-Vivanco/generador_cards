@@ -20,8 +20,8 @@ window.onload = function() {
   paloder.addEventListener("click", function() {
     ubicar_palo_d();
   });
-  //console.log("El numero va aqui", numero);
 
+  //console.log("El numero va aqui", numero);
   let num_random = document.querySelector("#numero_r");
   let numero = num_random.children[0].children[0];
   numero.addEventListener("click", function() {
