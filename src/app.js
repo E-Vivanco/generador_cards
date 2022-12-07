@@ -36,10 +36,10 @@ window.onload = function() {
   //}
 };
 
-let p_iz = Math.floor(Math.random() * 10 + 2);
+let p_iz = Math.floor(Math.random() * 10 + 4);
 console.log("quevalor?", p_iz);
 function ubicar_palo_i(val) {
-  p_iz = Math.floor(Math.random() * 10 + 1);
+  p_iz = Math.floor(Math.random() * 10 + 4);
   val = paloizq.body.appendChild(p_iz);
   console.log(val);
 }
