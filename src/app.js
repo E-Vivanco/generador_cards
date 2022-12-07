@@ -7,24 +7,27 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
+  //console.log("paloizq va aqui", paloizq);
   let palo1 = document.querySelector("#paloI");
   let paloizq = palo1.children[0].children[0];
   paloizq.addEventListener("click", function() {
     ubicar_palo_i();
   });
-  //console.log("paloizq va aqui", paloizq);
+
+  //console.log("paloder va aqui", paloder);
   let palo2 = document.querySelector("#paloD");
   let paloder = palo2.children[0].children[0];
   paloder.addEventListener("click", function() {
     ubicar_palo_d();
   });
-  //console.log("paloder va aqui", paloder);
+  //console.log("El numero va aqui", numero);
+
   let num_random = document.querySelector("#numero_r");
   let numero = num_random.children[0].children[0];
   numero.addEventListener("click", function() {
     num_rand();
   });
-  //console.log("El numero va aqui", numero);
+
   //console.log(num_random.children[0].children[0]);
   //  num_rand();
   //console.log(palo2.children[0].children[0]);
