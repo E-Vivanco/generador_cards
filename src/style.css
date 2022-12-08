@@ -3,29 +3,38 @@
 .card {
   background-color: white;
   width: 550px;
-  height: 420px;
+  height: 500px;
   border-radius: 12px;
 }
 .numero {
-  width: 25px;
-  height: 15px;
+  font-size: 120px;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  padding: 0px;
 }
 .palo_izq {
-  display: flex;
-  justify-items: flex-start;
-  width: 20px;
-  height: 15px;
-  margin: 5px;
-  padding: 5px;
   position: relative;
+  left: 0;
+  font-size: 45px;
+  /*margin: 5px;*/
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-left: 0%;
+  text-align: left;
+  margin-top: 2px;
 }
 
 .palo_der {
-  display: flex;
-  justify-items: flex-end;
-  width: 20px;
-  height: 15px;
-  margin: 5px;
+  position: absolute;
+  top: 325px;
+  right: 0;
+  font-size: 45px;
+  /*margin: 5px;*/
   padding: 5px;
-  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-left: 210px;
+  text-align: right;
+  margin-top: 50px;
 }
