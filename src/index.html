@@ -4,48 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-   <!-- <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body style="background-color: rgba(0,128,0,0.98)">
+  <body style="background-color: rgba(0,128,0,0.98)" onload="cargar_pagina()">
     <div class="card container-fluid card-text my-5" style="width: 18rem;">
       <div class="card-body">
         <div id="paloI" onload="ubicar_palo_i(this)">
-        <div class="row">
-          <div class="col-12 palo_izq">
-            <!--<i class="fa-solid fa-heart fa-1x"></i>-->
-          <img src="..." class="justify-content-left" alt="..." style="margin-left: 0px" />
+          <div class="row">
+            <div
+              class="col-12 palo_izq"
+              style="margin-left:0%; text-align:left; margin-top: 2px;"
+            >
+              ♠
+            </div>
           </div>
         </div>
-      </div>
-        <div id="numero_r" onload="number(this)">  
-         <div class="row">
-            <div class="col-12 numero" style="font-size: 160px; text-align: center;">
-              9
-            <!-- <img src="..." class="card-img-top" alt="..." />-->
+        <div id="numero_r" onload="number(this)">
+          <div class="row">
+            <div
+              class="col-12 numero"
+              style="font-size: 160px; text-align: center; margin-top: 69px;"
+            >
+              ♣
+              <!-- <img src="..." class="card-img-top" alt="..." />-->
+            </div>
           </div>
         </div>
-      </div>
-      <div id="paloD" onload="ubicar_palo_d(this)">  
-      <div class="row">
-          <div class="col-12 palo_der">
-            <!--<i class="fa-solid fa-heart fa-1x"></i>-->
-            <img src="..." class="justify-content-right" alt="..." style="margin-left:220px;" />
+        <div id="paloD" onload="ubicar_palo_d(this)">
+          <div class="row">
+            <div
+              class="col-12 palo_der"
+              style="margin-left:210px; text-align:right; margin-top: 50px;"
+            >
+              ♠
+              <!--<i class="fa-solid fa-heart fa-1x"></i>-->
+              <!--<img
+                src="..."
+                class="justify-content-right"
+                style="margin-left:220px;"
+              />-->
             </div>
           </div>
         </div>
       </div>
-        <!--<h5 class="card-title">Card title</h5>
+      <!--<h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>-->
-      </div>
     </div>
+
+    <button
+      id="filtro_cards"
+      class="btn btn-warning"
+      style="margin-left: 650px"
+    >
+      Selecciona
+    </button>
     <!--<div class="container-fluid text-center">
       <h1 class="mt-5">Hello Rigo!</h1>
       <img src="./rigo-baby.jpg" />
@@ -58,6 +84,6 @@
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>-->
-    <script src="vanilla.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

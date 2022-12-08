@@ -3,14 +3,14 @@
 .card {
   background-color: white;
   width: 550px;
-  height: 400px;
+  height: 420px;
   border-radius: 12px;
 }
-.numero {
+/*.numero {
   background-color: aquamarine;
   width: 260px;
-  height: 330px;
-}
+  height: 349px;
+}*/
 
 .palo_izq {
   display: flex;
@@ -19,6 +19,7 @@
   height: 15px;
   margin-left: 5px;
   padding-left: auto;
+  position: absolute;
 }
 
 .palo_der {
@@ -28,4 +29,5 @@
   height: 15px;
   margin-right: 5px;
   padding-right: auto;
+  position: absolute;
 }
