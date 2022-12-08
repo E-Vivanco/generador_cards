@@ -6,20 +6,18 @@
   height: 420px;
   border-radius: 12px;
 }
-/*.numero {
-  background-color: aquamarine;
-  width: 260px;
-  height: 349px;
-}*/
-
+.numero {
+  width: 25px;
+  height: 15px;
+}
 .palo_izq {
   display: flex;
   justify-items: flex-start;
   width: 20px;
   height: 15px;
-  margin-left: 5px;
-  padding-left: auto;
-  position: absolute;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
 }
 
 .palo_der {
@@ -27,7 +25,7 @@
   justify-items: flex-end;
   width: 20px;
   height: 15px;
-  margin-right: 5px;
-  padding-right: auto;
-  position: absolute;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
 }
