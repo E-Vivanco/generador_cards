@@ -16,7 +16,7 @@
 .palo_izq {
   position: relative;
   left: 0;
-  font-size: 45px;
+  font-size: 65px;
   padding: 5px;
   width: 200px;
   height: 100px;
@@ -28,7 +28,7 @@
 .palo_der {
   position: absolute;
   left: 0;
-  font-size: 45px;
+  font-size: 65px;
   transform: rotate(180deg);
   padding: 5px;
   width: 200px;

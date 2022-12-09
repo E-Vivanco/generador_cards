@@ -5,15 +5,15 @@ import "./style.css";
 import "./assets/img/4geeks.ico";
 /*"#filtro_cards" boton que activara random*/
 function generaCartas() {
-  let num = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
-  let numer = parseInt(Math.floor(Math.random() * 11 + 1));
+  let num = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
+  let numer = Math.round(Math.random() * 12);
   return num[numer];
 }
 //console.log(generaCartas());
 
 function generarpalos() {
   let cards1 = ["♠", "♣", "♦", "♥"];
-  let tipo = parseInt(Math.floor(Math.random() * 3 + 1));
+  let tipo = Math.round(Math.random() * 3);
   return cards1[tipo];
 }
 
