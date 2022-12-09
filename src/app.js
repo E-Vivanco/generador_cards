@@ -19,12 +19,22 @@ function generarpalos() {
 
 //function cargar_cards() {}
 window.onload = function() {
+  //console.log(valor);
   document.querySelector("#filtro_cards").addEventListener("click", () => {
-    document.querySelectorAll(
-      "#paloI .palo_izq",
-      "#paloD .palo_der"
-    ).innerHTML = generarpalos();
-    document.querySelector("#numero_r .numero").innerHTML = generaCartas();
+    let valor = generarpalos();
+    if (valor === "♦" || valor === "♥") {
+      document.querySelector("#paloI .palo_izq").style.color = "red";
+      document.querySelector("#paloD .palo_der").style.color = "red";
+      document.querySelector("#paloI .palo_izq").innerHTML = valor;
+      document.querySelector("#paloD .palo_der").innerHTML = valor;
+      document.querySelector("#numero_r .numero").innerHTML = generaCartas();
+    } else {
+      document.querySelector("#paloI .palo_izq").style.color = "black";
+      document.querySelector("#paloD .palo_der").style.color = "black";
+      document.querySelector("#paloI .palo_izq").innerHTML = valor;
+      document.querySelector("#paloD .palo_der").innerHTML = valor;
+      document.querySelector("#numero_r .numero").innerHTML = generaCartas();
+    }
     // document.querySelector("#paloD .palo_der").innerHTML = generarpalos();
   });
 };

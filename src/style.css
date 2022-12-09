@@ -2,12 +2,13 @@
 
 .card {
   background-color: white;
-  width: 550px;
+  width: 450px;
   height: 500px;
   border-radius: 12px;
 }
 .numero {
-  font-size: 130px;
+  /*background-color: aquamarine;*/
+  font-size: 170px;
   text-align: center;
   margin: 5px 5px 5px 5px;
   padding: 0px;
@@ -16,7 +17,6 @@
   position: relative;
   left: 0;
   font-size: 45px;
-  /*margin: 5px;*/
   padding: 5px;
   width: 200px;
   height: 100px;
@@ -27,14 +27,13 @@
 
 .palo_der {
   position: absolute;
-  top: 325px;
-  right: 0;
+  left: 0;
   font-size: 45px;
-  /*margin: 5px;*/
+  transform: rotate(180deg);
   padding: 5px;
   width: 200px;
   height: 100px;
-  margin-left: 210px;
-  text-align: right;
-  margin-top: 50px;
+  margin-left: 0%;
+  text-align: left;
+  margin-top: 2px;
 }
