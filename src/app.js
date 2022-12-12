@@ -6,7 +6,7 @@ import "./assets/img/4geeks.ico";
 /*"#filtro_cards" boton que activara random*/
 function generaCartas() {
   let num = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
-  let numer = Math.round(Math.random() * 12);
+  let numer = Math.round(Math.random() * 11);
   return num[numer];
 }
 //console.log(generaCartas());
